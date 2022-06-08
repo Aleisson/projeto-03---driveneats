@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.desktop{
+    margin: auto;
+    font-size: larger;
+    width: 200px;
+}
+
+.content{
+    display: none;
+}
+
+@media (max-width: 614px) {
+        .desktop{
+            display: none;
+        }
+
+        .content{
+            display: initial;
+            width: 614px;
+            margin: 0 auto;
+        };
+}
