@@ -1,28 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&display=swap');
 
-body{
-    font-family: 'Encode Sans', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
 }
 
-.desktop{
+.desktop {
     margin: auto;
     font-size: larger;
     width: 200px;
 }
 
-.content{
+.content {
     display: none;
 }
 
 @media (max-width: 614px) {
-        .desktop{
-            display: none;
-        }
+    .desktop {
+        display: none;
+    }
 
-        .content{
-            display: initial;
-            width: 614px;
-            margin: 0 auto;
-        };
+
+    .content {
+        display: initial;
+        width: 614px;
+        margin: 0 auto;
+    }
+
+    .topo {
+        background-color: #CF2B2B;
+        position: fixed;
+        width: 100%;
+        height: 92px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .topo>h1 {
+        font-family: 'Righteous';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 55px;
+        letter-spacing: -0.012em;
+        color: #FFFFFF;
+        position: absolute;
+        top: 8px;
+        left: 21px;
+    }
+
+    .topo>h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 57px;
+        left: 21px;
+
+    }
+
+    .teste {
+        margin-top: 100px;
+    }
+
+
+    .footer {
+        width: 100%;
+        background-color: #FFFFFF;
+        position: fixed;
+        width: 100%;
+        height: 92px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
+    }
+
+    .footer div {
+        width: 400px;
+        height: 75px;
+        background: #CBCBCB;
+        border-radius: 50px;
+        position: absolute;
+        left: 40px;
+        bottom: 8px;
+
+    }
+
+    .footer h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.018em;
+        position: absolute;
+        left: 75px;
+        bottom: 16px;
+        color: #FFFFFF;
+
+    }
+
+
+
+
+
+
 }
