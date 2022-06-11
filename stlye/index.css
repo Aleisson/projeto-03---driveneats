@@ -65,10 +65,30 @@ body {
 
     }
 
-    .teste {
-        margin-top: 100px;
+    .menu {
+        margin: 120px 0 10px 10px;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: wheat;
     }
 
+    .menu p {
+        font-family: 'Righteous';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.018em;
+        color: #333333;
+    }
+
+    .menu-boxs{
+        display: flex;
+        
+    }
 
     .footer {
         width: 100%;
@@ -79,6 +99,9 @@ body {
         bottom: 0;
         left: 0;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
@@ -87,9 +110,9 @@ body {
         height: 75px;
         background: #CBCBCB;
         border-radius: 50px;
-        position: absolute;
-        left: 40px;
-        bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
@@ -97,13 +120,10 @@ body {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 20px;
         line-height: 23px;
         text-align: center;
         letter-spacing: 0.018em;
-        position: absolute;
-        left: 75px;
-        bottom: 16px;
         color: #FFFFFF;
 
     }
