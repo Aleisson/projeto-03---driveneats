@@ -152,7 +152,7 @@ p {
 
 }
 
-.barra-pedido div {
+.botao {
     width: 400px;
     height: 75px;
     background: #CBCBCB;
@@ -163,7 +163,7 @@ p {
 
 }
 
-.barra-pedido h2 {
+.botao h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -173,4 +173,8 @@ p {
     letter-spacing: 0.018em;
     color: #FFFFFF;
 
+}
+
+.fechado{
+    background-color: #32B72F;
 }
