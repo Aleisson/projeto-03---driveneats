@@ -2,6 +2,8 @@ let prato;
 let bebida;
 let sobremesa;
 
+alert("aplicação funciona na resolução 375 x 667")
+
 function selecionarPrato(elemento) {
     prato = elemento;
     const botaoClicado = document.querySelector(".selecionado");
