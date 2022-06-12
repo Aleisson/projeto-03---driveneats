@@ -60,7 +60,7 @@ function encaminhar() {
 
     
 
-    location.assign(`https://wa.me/5562981910067?text=${msg}`);
+    location.assign(`https://wa.me/?text=${msg}`);
 }
 
 
