@@ -7,6 +7,10 @@ body {
 
 }
 
+.escondido {
+    display: none;
+}
+
 .topo {
     background-color: #CF2B2B;
     position: fixed;
@@ -41,8 +45,6 @@ body {
     line-height: 21px;
     color: #FFFFFF;
     margin-left: 18px;
-    ;
-
 }
 
 
@@ -175,6 +177,28 @@ p {
 
 }
 
-.fechado{
+.fechado {
     background-color: #32B72F;
+}
+
+.revisar {
+    width: 377px;
+    height: 353px;
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.revisar h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
 }

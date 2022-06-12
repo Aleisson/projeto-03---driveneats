@@ -44,7 +44,7 @@ function fecharPedido() {
 }
 
 function encaminhar() {
-    let msgPrato =  prato.querySelector("p").innerHTML ;
+    let msgPrato = prato.querySelector("p").innerHTML;
     let msgBebida = bebida.querySelector("p").innerHTML;
     let msgSobremesa = bebida.querySelector("p").innerHTML;
     let msgTotal = Number(prato.querySelector("h3").innerHTML.replace("R$", "").replace(",", ".")) +
@@ -52,13 +52,19 @@ function encaminhar() {
         Number(sobremesa.querySelector("h3").innerHTML.replace("R$", "").replace(",", "."));
     msgTotal = msgTotal.toFixed(2);
 
+    let nome = prompt("Qual é o seu Nome?")
+    let endereco = prompt("Qual é seu Endereço ?")
+
+
     let msg = encodeURIComponent(`Olá, gostaria de fazer o pedido:
     - Prato: ${msgPrato}
     - Bebida: ${msgBebida}
     - Sobremesa: Pudim
-    Total: R$ ${msgTotal}`);
-
+    Total: R$ ${msgTotal}
     
+    Nome: ${nome}
+    Endereço: ${endereco}`);
+
 
     location.assign(`https://wa.me/?text=${msg}`);
 }
