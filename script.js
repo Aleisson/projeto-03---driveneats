@@ -3,7 +3,7 @@ let bebida;
 let sobremesa;
 
 function selecionarPrato(elemento) {
-    prato = elemento.innerHTML;
+    prato = elemento;
     const botaoClicado = document.querySelector(".selecionado");
     if (botaoClicado !== null) {
         botaoClicado.classList.remove("selecionado");
@@ -39,13 +39,29 @@ function fecharPedido() {
         const botao = document.querySelector(".botao");
         botao.classList.add("fechado");
         botao.innerHTML = "<h2>Fechar pedido";
-        botao.setAttribute("onclick", "teste()");
+        botao.setAttribute("onclick", "encaminhar()");
     }
 }
 
-function teste() {
-    alert("OI");
+function encaminhar() {
+    let msgPrato =  prato.querySelector("p").innerHTML ;
+    let msgBebida = bebida.querySelector("p").innerHTML;
+    let msgSobremesa = bebida.querySelector("p").innerHTML;
+    let msgTotal = Number(prato.querySelector("h3").innerHTML.replace("R$", "").replace(",", ".")) +
+        Number(bebida.querySelector("h3").innerHTML.replace("R$", "").replace(",", ".")) +
+        Number(sobremesa.querySelector("h3").innerHTML.replace("R$", "").replace(",", "."));
+    msgTotal = msgTotal.toFixed(2);
+
+    let msg = encodeURIComponent(`Olá, gostaria de fazer o pedido:
+    - Prato: ${msgPrato}
+    - Bebida: ${msgBebida}
+    - Sobremesa: Pudim
+    Total: R$ ${msgTotal}`);
+
+    
+
+    location.assign(`https://wa.me/5562981910067?text=${msg}`);
 }
 
-confirm.log(`${encodeURIComponent("teste")}
-${encodeURIComponent("teste")}`)
+
+
