@@ -6,7 +6,7 @@ alert("aplicação funciona na resolução 375 x 667")
 
 function selecionarPrato(elemento) {
     prato = elemento;
-    const botaoClicado = document.querySelector(".selecionado");
+    const botaoClicado = document.querySelector(".pratos .selecionado");
     if (botaoClicado !== null) {
         botaoClicado.classList.remove("selecionado");
     }
