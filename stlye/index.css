@@ -4,8 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
-    
-    
+
+
 }
 
 .escondido {
@@ -36,7 +36,7 @@ body {
     letter-spacing: -0.012em;
     color: #FFFFFF;
     margin-left: 18px;
-    
+
 }
 
 .topo>h2 {
@@ -70,9 +70,9 @@ p {
     align-items: center;
     overflow-x: scroll;
     width: auto;
-    
-    
-    
+
+
+
 }
 
 .box-menu {
@@ -173,7 +173,7 @@ p {
 }
 
 .botao h2 {
-   
+
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -188,8 +188,8 @@ p {
 }
 
 .revisar {
-    width: 377px;
-    height: 353px;
+    width: 348px;
+    height: 320px;
     background: #50D074;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
@@ -197,7 +197,10 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-    margin: auto;
+    position: fixed;
+    left: 12px;
+    top: calc(50% - 353px/2 - 0.5px);
+
     z-index: 100;
 }
 
@@ -212,7 +215,7 @@ p {
 }
 
 .revisar div {
-    width: 362px;
+    width: 330px;
     display: flex;
     justify-content: space-between;
 
@@ -236,14 +239,15 @@ p {
     line-height: 26px;
     letter-spacing: 0.018em;
     color: #FFFFFF;
+    margin: 0 8px;
 }
 
-.botton-revisar {
-    width: 333px;
+.revisar .botton-revisar {
+    width: 320px;
     height: 52px;
     background: #FFFFFF;
     border-radius: 100px;
-
+    margin-left: 12px;
 }
 
 
@@ -259,4 +263,14 @@ p {
     letter-spacing: 0.018em;
     color: #50D074;
     margin: auto;
+}
+
+.fundo-branco{
+    background: rgba(255, 255, 255, 0.9);
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
 }

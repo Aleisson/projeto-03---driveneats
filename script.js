@@ -1,6 +1,8 @@
 let prato;
 let bebida;
 let sobremesa;
+let nome;
+let endereco;
 
 alert("aplicação funciona na resolução 375 x 667")
 
@@ -46,6 +48,16 @@ function fecharPedido() {
 }
 
 function encaminhar() {
+    nome = prompt("Qual é o seu Nome?")
+    endereco = prompt("Qual é seu Endereço ?")
+    document.querySelector(".escondido").classList.remove("escondido");
+    
+
+}
+
+function confirmar() {
+
+
     let msgPrato = prato.querySelector("p").innerHTML;
     let msgBebida = bebida.querySelector("p").innerHTML;
     let msgSobremesa = bebida.querySelector("p").innerHTML;
@@ -53,10 +65,6 @@ function encaminhar() {
         Number(bebida.querySelector("h3").innerHTML.replace("R$", "").replace(",", ".")) +
         Number(sobremesa.querySelector("h3").innerHTML.replace("R$", "").replace(",", "."));
     msgTotal = msgTotal.toFixed(2);
-
-    let nome = prompt("Qual é o seu Nome?")
-    let endereco = prompt("Qual é seu Endereço ?")
-
 
     let msg = encodeURIComponent(`Olá, gostaria de fazer o pedido:
     - Prato: ${msgPrato}
@@ -69,7 +77,6 @@ function encaminhar() {
 
 
     location.assign(`https://wa.me/?text=${msg}`);
+
 }
-
-
 
